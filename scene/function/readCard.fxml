@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="readCard" onMouseMoved="#moveDefault" prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: lightyellow;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scene.function.ReadCardController">
+   <children>
+      <SplitPane dividerPositions="0.5" layoutX="103.0" layoutY="264.0" orientation="VERTICAL" prefHeight="334.0" prefWidth="493.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label fx:id="english" alignment="CENTER" contentDisplay="RIGHT" layoutY="1.0" prefHeight="164.0" prefWidth="492.0" style="-fx-background-color: lightyellow;" text="Label">
+                     <font>
+                        <Font name="Segoe Print" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: lightyellow;">
+               <children>
+                  <Label fx:id="chinese" alignment="CENTER" layoutX="149.0" prefHeight="164.0" prefWidth="342.0" style="-fx-background-color: lightyellow;" text="Label">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="type" alignment="CENTER" layoutX="40.0" prefHeight="163.0" prefWidth="153.0" style="-fx-background-color: lightyellow;" text="Label">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </items>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </SplitPane>
+      <Button fx:id="next" layoutX="619.0" layoutY="405.0" mnemonicParsing="false" onAction="#next" onMouseMoved="#moveOver" prefHeight="52.0" prefWidth="54.0" style="-fx-background-color: lightyellow;" text="&gt;">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button fx:id="pre" layoutX="30.0" layoutY="405.0" mnemonicParsing="false" onAction="#pre" onMouseMoved="#moveOver" prefHeight="52.0" prefWidth="54.0" style="-fx-background-color: lightyellow;" text="&lt;">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Button>
+      <ImageView fx:id="paint" fitHeight="151.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="menu" layoutX="630.0" layoutY="100.0" mnemonicParsing="false" onAction="#switchToMenu" onMouseMoved="#moveOver" prefHeight="43.0" prefWidth="42.0" style="-fx-background-color: ffca18;">
+         <font>
+            <Font name="Segoe Print Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

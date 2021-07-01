@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="showTest" onMouseMoved="#moveDefault" prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: lightyellow;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scene.function.ShowTestScore">
+   <children>
+      <Label layoutX="84.0" layoutY="210.0" prefHeight="64.0" prefWidth="200.0" text=" Score">
+         <font>
+            <Font name="Segoe Print Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="score" layoutX="310.0" layoutY="210.0" style="-fx-underline: true;" text="100" textFill="LIGHTCORAL">
+         <font>
+            <Font name="Segoe Print Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="qus" layoutX="158.0" layoutY="322.0" prefHeight="113.0" prefWidth="424.0" text="Label">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="ans1" layoutX="93.0" layoutY="468.0" mnemonicParsing="false" text="RadioButton">
+         <toggleGroup>
+            <ToggleGroup fx:id="ans" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="ans2" layoutX="378.0" layoutY="468.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$ans" />
+      <RadioButton fx:id="ans3" layoutX="93.0" layoutY="545.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$ans" />
+      <RadioButton fx:id="ans4" layoutX="378.0" layoutY="545.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$ans" />
+      <Label fx:id="num" alignment="CENTER" layoutX="68.0" layoutY="322.0" prefHeight="114.0" prefWidth="79.0" text="10">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="next" layoutX="563.0" layoutY="617.0" mnemonicParsing="false" onAction="#nextPage" onMouseMoved="#moveOver" prefHeight="47.0" prefWidth="84.0" style="-fx-background-color: ffca18;" text="下一題" />
+      <ImageView fx:id="paint" fitHeight="151.0" fitWidth="700.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
